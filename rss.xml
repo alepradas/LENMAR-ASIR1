@@ -3,7 +3,7 @@
 
 <channel>
   <title>Mi canal RSS Alejandro Pradas Prieto</title>
-  <link>https://alepradas.github.io/LENMAR-ASIR1/</link>
+  <link>https://alepradas.github.io/LENMAR-ASIR1/rss.xml</link>
   <description>Canal de Información de Alejandro Pradas</description>
   <item>
     <title>Mi primera noticia</title>
