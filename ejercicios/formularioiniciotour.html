@@ -7,17 +7,21 @@
 <body style="background-color: darkorange;">
 <h2 style="text-align: center;">Contacta</h2>
 <hr>
-<form>
-    <label for="ciudad">Ciudad</label><br>
-    <textarea name="texto" rows="4" cols="15"></textarea><br>
-    <label for="Nombre">Nombre</label><br>
-    <input type="texto" name="Nombre"><br>
+<form style="float: center;">
+    
+<fieldset style="margin-right: 75%; float: center;">
+    <legend>Datos Personales</legend>
+    <label for="Nombre" aria-placeholder="">Nombre</label><br>
+    <input type="texto" placeholder="Nombre" name="Nombre"><br>
     <label for="Apellidos">Apellidos</label><br>
     <input type="texto" name="Apellidos"><br>
     <label for="Correo electrónico">Correo electrónico</label><br>
-    <input type="texto" id="correo electrónico" name="correo electrónico"><br>
+    <input type="email" id="correo electrónico" name="correo electrónico" placeholder="Correo@ejemplo"><br>
     <label for="tlfno">Núm. Teléfono</label><br>
     <input type="texto" id="Teléfono" name="Teléfono"><br>
+    
+</fieldset>
+<fieldset style="margin-right: 75%;">
     <label for="otros">Otros</label><br>
     <textarea name="texto" rows="4" cols="15"></textarea><br>
     <label for="adultos">Núm. Adultos</label><br>
@@ -31,9 +35,24 @@
     <label for="Media Pensión">Pensión completa</label><br>
     <input type="radio" id="Todo Incluido" name="regimenalojamiento"value="Todo Incluido">
     <label for="Todo Incluido">Todo Incluido</label><br>
+    <label for="ciudad">Ciudad</label>
+    <br>
+    <select name="menu" size="3">
+        <option value="1">Sevilla</option>
+        <option value="2">Barcelona</option>
+        <option value="3">Madrid</option>
+        <option value="4">Valencia</option>
+        <option value="5">Toledo</option>
+        <option value="6">Huelva</option>
+        <option value="7">Cádiz</option>
+        <option value="8">Málaga</option>
+     </select>
+</fieldset>
+<fieldset style="margin-right: 75%; border-color: chartreuse;">
       <button type="button" value="Volver"><a href="iniciotour.html">VOLVER</a></button>
       <button type="reset" value="Limpiar"> LIMPIAR </button>
       <button type="submit" value="Enviar">ENVIAR</button>
+</fieldset>
  </form>
   </body>
   </html>
