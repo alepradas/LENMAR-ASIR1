@@ -16,9 +16,16 @@
     <description>Cartelera Cine de Écija</description>
   </item>
   <item>
-    <title>Productos Informáticos</title>
+    <title>Mi tercera noticia</title>
     <link>https://www.pccomponentes.com/</link>
     <description>Sitio Web para comprar Productos Informáticos</description>
+  </item>
+  <item>
+    <title>Mi cuarta noticia</title>
+    <description>Palmeras en el atardecer</description>
+    <image>
+      <url>https://www.hazunaweb.com/imagenes/prueba.jpg</url>
+    </image>
   </item>
 </channel>
 </rss>
