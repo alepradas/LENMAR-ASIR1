@@ -6,14 +6,18 @@
   <link>https://alepradas.github.io/LENMAR-ASIR1/rss.xml</link>
   <description>Canal de Información de Alejandro Pradas</description>
   <item>
-    <title>Mi primera noticia</title>
+    <title>Mi primera noticia </title>
     <link>https://www.eltiempo.es/ecija.html</link>
-    <description>Información sobre el tiempo actual en Écija</description>
+    <description>Información sobre el tiempo actual en Écija (Sevilla) Editado (Jueves,16 de Diciembre)</description>
   </item>
   <item>
     <title>Mi segudna noticia</title>
     <link>https://artesiete.es/Cine/11/Artesiete-Ecija</link>
     <description>Cartelera Cine de Écija</description>
   </item>
+  <item>
+    <title>Productos Informáticos</title>
+    <link>https://www.pccomponentes.com/</link>
+    <description>Sitio Web para comprar Productos Informáticos</description>
 </channel>
 </rss>
