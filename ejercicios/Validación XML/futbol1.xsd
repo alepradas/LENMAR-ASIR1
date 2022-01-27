@@ -16,7 +16,7 @@
                                                 <xs:sequence>
                                                     <xs:element name="nombre" type="xs:string"/>
                                                     <xs:element name="fechanac" type="xs:date"/>
-                                                    <xs:element name="gole" type="xs:integer"/>
+                                                    <xs:element name="goles" type="xs:integer"/>
                                                     <xs:element name="tarjetas">
                                                         <xs:complexType>
                                                             <xs:sequence>
@@ -67,6 +67,5 @@
                 </xs:element>
             </xs:sequence>
         </xs:complexType>
-
     </xs:element>
 </xs:schema>
