@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<consolas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="consolas1.xsd">
+    <plataforma>PS</plataforma>
+        <version>4</version>
+        <fechalanzamiento>10/10/2020</fechalanzamiento>
+        <ventas>
+            <numero>300</numero>
+            <mes>Enero</mes>
+            <año>2022</año>
+        </ventas>
+        <generos>
+            <accion>
+                <nombre>Street Fighter</nombre>
+            </accion>
+            <rol>
+                <nombre>Bloodborne</nombre>
+            </rol>
+            <arcade>
+                <nombre>Shovel Knight</nombre>
+            </arcade>
+        </generos>
+    <plataforma>PS</plataforma>
+        <version>5</version>
+        <fechalanzamiento>10/10/2021</fechalanzamiento>
+        <ventas>
+            <numero>600</numero>
+            <mes>Enero</mes>
+            <año>2022</año>
+        </ventas>
+        <generos>
+            <accion>
+                <nombre>Call of Duty</nombre>
+            </accion>
+            <rol>
+                <nombre>Elden Ring</nombre>
+            </rol>
+            <arcade>
+                <nombre>Pacman</nombre>
+            </arcade>
+        </generos>
+    <plataforma>XBOX</plataforma>
+        <version>2021</version>
+        <fechalanzamiento>10/10/2019</fechalanzamiento>
+        <ventas>
+            <numero>1000</numero>
+            <mes>Enero</mes>
+            <año>2022</año>
+        </ventas>
+        <generos>
+            <accion>
+                <nombre>Forza Horizon</nombre>
+            </accion>
+            <rol>
+                <nombre>Biomutant</nombre>
+            </rol>
+            <arcade>
+                <nombre>Capcom Arcade Stadium</nombre>
+            </arcade>
+        </generos>
+</consolas>
