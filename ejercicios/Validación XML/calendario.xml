@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calendario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="calendario.xsd">
+
+<trimestre atributo="primero">
+        <asignatura nombre="LLMM">
+            <tema id="4">
+                <nombre>RSS</nombre>
+                <notamedia>
+                    <teoria>70</teoria>
+                    <practica>30</practica>
+                </notamedia>
+            </tema>
+        </asignatura>
+</trimestre>
+ </calendario>
