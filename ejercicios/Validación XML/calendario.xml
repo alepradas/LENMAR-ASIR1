@@ -1,16 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<calendario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="calendario.xsd">
+<calendario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="calendario.xsd">
 
-<trimestre atributo="primero">
+    <trimestre ciclos="primero">
         <asignatura nombre="LLMM">
             <tema id="4">
                 <nombre>RSS</nombre>
-                <notamedia>
-                    <teoria>70</teoria>
-                    <practica>30</practica>
-                </notamedia>
+                <notaMedia>
+                    <teoria>4.5</teoria>
+                    <practica>5.5</practica>
+                </notaMedia>
+                <notaMedia>
+                    <teoria>8</teoria>
+                    <practica>9</practica>
+                </notaMedia>
             </tema>
+            <tema id="5">
+                <nombre>RSS</nombre>
+                <notaMedia>
+                    <teoria>4.5</teoria>
+                    <practica>5.5</practica>
+                </notaMedia>
+                <notaMedia>
+                    <teoria>8</teoria>
+                    <practica>9</practica>
+                </notaMedia>
+            </tema>
+            <fechaExamenes>2022-02-13</fechaExamenes>
+            <fechaExamenes>2022-02-13</fechaExamenes>
+            <fechaExamenes>2022-02-13</fechaExamenes>
+            <fechaExamenes>2022-02-13</fechaExamenes>
         </asignatura>
-</trimestre>
- </calendario>
+        <asignatura nombre="PLAR">
+            <tema id="4">
+                <nombre>RSS</nombre>
+                <notaMedia>
+                    <teoria>4.5</teoria>
+                    <practica>5.5</practica>
+                </notaMedia>
+                <notaMedia>
+                    <teoria>8</teoria>
+                    <practica>9</practica>
+                </notaMedia>
+            </tema>
+            <tema id="5">
+                <nombre>RSS</nombre>
+                <notaMedia>
+                    <teoria>4.5</teoria>
+                    <practica>5.5</practica>
+                </notaMedia>
+                <notaMedia>
+                    <teoria>8</teoria>
+                    <practica>9</practica>
+                </notaMedia>
+            </tema>
+            <fechaExamenes>2022-02-13</fechaExamenes>
+            <fechaExamenes>2022-02-13</fechaExamenes>
+            <fechaExamenes>2022-02-13</fechaExamenes>
+            <fechaExamenes>2022-02-13</fechaExamenes>
+        </asignatura>
+    </trimestre>
+</calendario>
