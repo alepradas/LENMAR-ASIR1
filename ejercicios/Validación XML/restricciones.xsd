@@ -1,74 +1,141 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="restricciones">
+    <xs:element name="Ejerciciosrestricciones">
         <xs:complexType>
-            <xs:element name="restricciones">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:element name="persona">
-                            <xs:complexType>
-                                <!--
+            <xs:sequence>
+                <xs:element name="restricciones">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="persona">
+                                <xs:complexType>
+                                    <!--
              el XS:all me indica que puedo poner los elementos en el
                                     orden que yo quiera, pero deben aparecer, excepto cuando 
                                 yo especifico el mínimo y el máximo, que solo pueden ser de 0 a 1.
             -->
-                                <xs:all>
-                                    <xs:element name="nombre" type="xs:string" minOccurs="0" />
-                                    <xs:element name="apellidos" type="xs:string" />
-                                </xs:all>
-                            </xs:complexType>
-                        </xs:element>
-                        <xs:element name="empresa">
-                            <xs:complexType>
-                                <!--
-             con choice elijo una de las opciones 
-                                        que tengo dentro, pero solo una 
-            -->
-                                <xs:choice>
-                                    <xs:element name="empleado" type="xs:string" />
-                                    <xs:element name="miembro" type="xs:string" />
-                                </xs:choice>
-                            </xs:complexType>
-                        </xs:element>
-                        <!-- Ejemplo de restriccion de valores numéricos -->
-                        <xs:element name="edadSinrestriccion" type="xs:integer" />
-                        <xs:element name="edad">
-                            <xs:simpleType>
-                                <xs:restriction base="xs:integer">
-                                    <xs:minInclusive value="18" />
-                                    <xs:maxInclusive value="100" />
-                                </xs:restriction>
-                            </xs:simpleType>
-                        </xs:element>
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <!--
+                                    <xs:all>
+                                        <xs:element name="nombre" type="xs:string" minOccurs="0" />
+                                        <xs:element name="apellidos" type="xs:string" />
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="empresa">
+                                <xs:complexType>
+                                    <!--con choice elijo una de las opciones que tengo dentro, pero solo una -->
+                                    <xs:choice>
+                                        <xs:element name="empleado" type="xs:string" />
+                                        <xs:element name="miembro" type="xs:string" />
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+                            <!-- Ejemplo de restriccion de valores numéricos -->
+                            <xs:element name="edadSinrestriccion" type="xs:integer" />
+                            <xs:element name="edad">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="18" />
+                                        <xs:maxInclusive value="100" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <!--
              ejemplo de creación de un grupo de campos a reutilizar en mi xsd 
             -->
-            <xs:element name="alumno">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:group ref="datosPersona" />
-                        <xs:element name="modulo" type="xs:string" />
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <xs:element name="tutor">
-                <xs:complexType>
-                    <xs:sequence>
-                        <xs:group ref="datosPersona" />
-                        <xs:element name="telefono" type="xs:string" />
-                    </xs:sequence>
-                </xs:complexType>
-            </xs:element>
-            <xs:group name="datosPersona">
-                <xs:sequence>
-                    <xs:element name="firstname" type="xs:string" />
-                    <xs:element name="lastname" type="xs:string" />
-                    <xs:element name="birthday" type="xs:date" />
-                </xs:sequence>
-            </xs:group>
+                <xs:element name="alumno">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:group ref="datosPersona" />
+                            <xs:element name="modulo" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tutor">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:group ref="datosPersona" />
+                            <xs:element name="telefono" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+
+                <xs:element name="coche">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Audi"></xs:enumeration>
+                            <xs:enumeration value="Golf"></xs:enumeration>
+                            <xs:enumeration value="BMW"></xs:enumeration>
+                            <xs:enumeration value="Otro"></xs:enumeration>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="semana" type="tipoSemana" />
+
+
+                <xs:element name="letter">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="([a-z])*"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="numero">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="([0-9])*"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="patron2">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="([a-z])([A-Z])*"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="genero">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="hombre|mujer"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="address">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:whiteSpace value="preserve" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+
+    
+    <!-- Definición de un grupo de elementos a reutilizar -->
+    <xs:group name="datosPersona">
+        <xs:sequence>
+            <xs:element name="firstname" type="xs:string" />
+            <xs:element name="lastname" type="xs:string" />
+            <xs:element name="birthday" type="xs:date" />
+        </xs:sequence>
+    </xs:group>
+
+    <!-- Esta es la definición del tipo "tipoSemana" -->
+    <xs:simpleType name="tipoSemana">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Lunes" />
+            <xs:enumeration value="Martes" />
+            <xs:enumeration value="Miércoles" />
+            <xs:enumeration value="Jueves" />
+            <xs:enumeration value="Viernes" />
+            <xs:enumeration value="Sábado" />
+            <xs:enumeration value="Domingo" />
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>

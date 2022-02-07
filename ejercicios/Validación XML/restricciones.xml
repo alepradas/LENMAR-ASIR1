@@ -1,12 +1,36 @@
 <?xml version="1.0"?>
-<restricciones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="restricciones.xsd">
-    <persona>
-        <apellidos />
-        <nombre />
-    </persona>
-    <empresa>
-        <empleado>Juan Perez</empleado>
-    </empresa>
-    <edadSinrestriccion>700</edadSinrestriccion>
-    <edad>18</edad>
-</restricciones>
+<Ejerciciosrestricciones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="restricciones.xsd">
+    <restricciones>
+
+
+        <persona>
+            <apellidos />
+            <nombre />
+        </persona>
+        <empresa>
+            <empleado>Juan Perez</empleado>
+        </empresa>
+        <edadSinrestriccion>700</edadSinrestriccion>
+        <edad>18</edad>
+    </restricciones>
+    <alumno>
+        <firstname>a</firstname>
+        <lastname>a</lastname>
+        <birthday>2020-10-10</birthday>
+        <modulo>ASIR</modulo>
+    </alumno>
+    <tutor>
+        <firstname>b</firstname>
+        <lastname>b</lastname>
+        <birthday>2020-10-10</birthday>
+        <telefono>12121212</telefono>
+    </tutor>
+    <coche>Audi</coche>
+    <semana>Jueves</semana>
+    <letter>basasasas</letter>
+    <numero>56574563456</numero>
+    <patron2>aBBDFSJSD</patron2>
+    <genero>hombre</genero>
+    <address></address>
+
+</Ejerciciosrestricciones>
