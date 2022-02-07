@@ -116,7 +116,7 @@
     </xs:element>
 
 
-    
+
     <!-- Definición de un grupo de elementos a reutilizar -->
     <xs:group name="datosPersona">
         <xs:sequence>
@@ -138,4 +138,5 @@
             <xs:enumeration value="Domingo" />
         </xs:restriction>
     </xs:simpleType>
+
 </xs:schema>
