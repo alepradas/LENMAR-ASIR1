@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="patrones">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="telefono">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name="password">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="9"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+<xs:element name="dni">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}[-][a-zA-Z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+<xs:element name="expresiones">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="maldito"></xs:enumeration>
+            <xs:enumeration value="mala"></xs:enumeration>
+            <xs:enumeration value="buenos dias"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+<xs:element name="pastilla">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}[-][a-zA-Z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+<xs:element name="email">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z0-9]+[@][a-z]+[.][a-z]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+<xs:element name="email2">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[_]*[a-z0-9]{6,50}[@][a-z]{1,10}[.][a-z]{2,6}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+</xs:schema>

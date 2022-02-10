@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<patrones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="expresiones.xsd">
+    <telefono>+34566677893</telefono>
+    <password></password>
+    <dni>47537681Q</dni>
+    <expresiones>mala</expresiones>
+    <pastilla>viagra</pastilla>
+    <email>alepradas.asir@gmail.com</email>
+    <email2>_abcdef@a.es</email2>
+</patrones>
