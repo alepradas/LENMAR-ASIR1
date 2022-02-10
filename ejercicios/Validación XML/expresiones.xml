@@ -7,4 +7,8 @@
     <pastilla>viagra</pastilla>
     <email>alepradas.asir@gmail.com</email>
     <email2>_abcdef@a.es</email2>
+    <sexo>
+        <femenino>Mujer</femenino>
+        <masculino>Hombre</masculino>
+    </sexo>
 </patrones>
