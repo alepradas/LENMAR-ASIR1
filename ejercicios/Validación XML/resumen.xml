@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resumenes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="resumen.xsd">
+<ConjuntoSimples>
+        <!-- Tipos Simples sin Stributos-->
+
+    <SinAtributo>Elemento Simple</SinAtributo>
+    <SinAtributoTipoSimple>2020-10-10</SinAtributoTipoSimple>
+    <SinAtributoTipoDefinidos>Sevilla</SinAtributoTipoDefinidos>
+
+    <!-- Repetir lo anterior pero con atributos-->
+    
+</ConjuntoSimples>
+<ConjuntoComplejos>
+
+    <Elemento1>
+        <subElemento1>Cadena</subElemento1>
+        <subElemento2>2</subElemento2>
+    </Elemento1>
+
+    <Elemento2 id="0">
+        <subElemento1>Cadena</subElemento1>
+        <subElemento2>2</subElemento2>
+    </Elemento2>
+    
+    <Elemento3>
+        <subElemento1>Sevilla</subElemento1>
+        <subElemento2>
+            <localidad>Ecija</localidad>
+            <CP>41568</CP>
+            <ciudad>Cualquier ciudad</ciudad>
+        </subElemento2>
+    </Elemento3>
+
+</ConjuntoComplejos>
+</resumenes>
