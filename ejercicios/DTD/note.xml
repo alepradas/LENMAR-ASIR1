@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE note SYSTEM "note.dtd">
+<note>
+    <to>Paco</to>
+    <from>Alejandro</from>
+    <heading>Hola</heading>
+    <body>
+        <mensaje>Hola Paco</mensaje>
+        <fecha>
+            <dia>03</dia>
+            <mes>Marzo</mes>
+            <anno>2022</anno>
+        </fecha>
+    </body>
+</note>

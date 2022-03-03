@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="nota.xsd">
+  <to>Tove</to>
+  <from>Jani</from>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
+  <ciere>Cierreeeeee</ciere>
+<!-- Elemento complejo con atributo -->
+  <elementoComplejoConAtributo id="0">
+      <subelemento1> Valor del subelemento 1</subelemento1>
+  </elementoComplejoConAtributo>
+<!-- Expresiones regulares -->
+
+<edad>50</edad>
+<car>Golf</car>
+
+<carta>aaA</carta>
+
+ <balon>verde</balon>
+</note>

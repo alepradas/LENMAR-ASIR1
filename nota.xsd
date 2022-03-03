@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="note">
+        <xs:complexType>
+            <!-- All (todos pero en el orden que quiera.
+            Choice (elegir uno de entre todos los elementos que defina).
+            Sequence (todos los elementos y en el mismo orden). -->
+            <xs:sequence>
+                <xs:element name="to" type="xs:string"/>
+                <xs:element name="from" type="xs:string"/>
+                <xs:element name="heading" type="xs:string"/>
+                <xs:element name="body" type="xs:string"/>
+                <xs:element name="ciere" type="xs:string" maxOccurs="unbounded"/> <!--numero indefinido de elemerntos con nombre cierre -->
+
+                <!-- Elemento complejo con atributo -->
+                <xs:element name="elementoComplejoConAtributo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="subelemento1" type="xs:string"/>
+                        </xs:sequence>
+                        <!-- Aquí va la definición del atributo -->
+                        <xs:attribute name="id" type="xs:integer"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Expresiones regulares -->
+
+                <!-- Expresión regular sobre un elemento simple -->
+                <xs:element name="edad" default="80">                    <!-- Ahora aquí no se define el type, se hace en la restricción(base="") -->
+                    <xs:simpleType>
+                        <!-- En base ponemos el tipo de dato que se espera -->
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="0"/>
+                            <xs:maxInclusive value="120"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <!-- Enumerar elementos de tipo cadena, solo puedes poner uno de los que hay ahí especificamente -->
+                <xs:element name="car">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="Audi"/>
+                            <xs:enumeration value="Golf"/>
+                            <xs:enumeration value="BMW"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <!-- Patrones de caracteres -->
+                <xs:element name="carta">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[a-e][a-e][A]"/> <!--Los corchetes definen un único caracter, perteneciente a un rango-->
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                
+                <xs:element name="balon" default="rojo">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="verde"/>
+                            <xs:enumeration value="rojo"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+
+                </xs:element>
+
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
+
+<!-- Tipos de datos de XML Schema "simples" -->
+<!-- 
+xs:string
+xs:decimal
+xs:integer
+xs:boolean
+xs:date
+xs:time
+-->
+<!-- Para definir el número de veces que queremos que aparezca un elemento, añadimos minOccurs y maxOccurs -->
+<!--
+<xs:element name="ciere" type="xs:string" minOccurs="5" maxOccurs="6"/>
+
+    **  Cuando no se cuántos elementos, pongo "no definido" maxOccurs="unbounded"
+-->
+
+<!-- Atributos 
+
+    * Los atributos en los elementos simples no tienen sentido: No existen!
+    <note id="0"> nota de pie de pagina </note>
+
+    *En los elementos complejos, debe ponerse la sentencia <xs:atributte name="" type=""/> 
+        entre el cierre del sequence/all/choice y el cierre del complextype -->
+
+        
+<!-- Expresiones regulares:
+    
+     *** Patrones de expresiones regulares:
+
+            <xs:pattern value="[a-e][a-e][A]"/> => tres caracteres, los dos primeros entre la a y la e minuscula y el último simepre A.
+            <xs:pattern value="[xyz][xyz][aeiou]"/> => el ultimo toma alguno de esos valores
+            <xs:pattern value="[a-z]{1,1000}"/>
+                                []{valorMinimo, valorMaximo} 
+                                []* =Debe aparecer entre 0 y infinito
+                                []+ =Debe aparecer mínimo 1 vez, y máximo infinito.
+    
+            <xs:pattern value="[a-zA-Z]"/> ==> Cualquier caracter del alfabeto mayuscula o minuscula.
+             <xs:pattern value="[a-zA-Z0-9]"/> ==> Cualquier caracter del alfabeto mayuscula o minuscula o un valor entre el 0 y el 9.
+
+                        -Definición del DNI
+                         
+                        <xs:pattern value="[0-9]{8}[a-zA-Z]"/> ==> 12345678A
+    
+    
+    -->
