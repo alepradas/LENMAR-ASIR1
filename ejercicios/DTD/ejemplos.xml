@@ -2,7 +2,7 @@
 <!DOCTYPE TVSCHEDULE SYSTEM "ejemplos.dtd">
 <TVSCHEDULE NAME="Programación">
     <CHANNEL CHAN="Telecinco">
-        <BANNER>PELICULA DE TELECINCO</BANNER>
+        <BANNER>Series de Telecinco</BANNER>
         <DAY>
             <DATE>"fecha"</DATE>
             <HOLIDAY>yes</HOLIDAY>
@@ -10,13 +10,32 @@
             <HOLIDAY></HOLIDAY>
             <PROGRAMSLOT>
                 <TIME>14:00</TIME>
-                <TITLE>El precio justo</TITLE>
+                <TITLE LANGUAGE="ESP">El precio justo</TITLE>
                 <DESCRIPTION>Programa de adivinar el precio de diferentes productos</DESCRIPTION>
             </PROGRAMSLOT>
-            <PROGRAMSLOT>
+            <PROGRAMSLOT VTR="atributo">
                 <TIME>20:00</TIME>
-                <TITLE>Pasapalabra</TITLE>
+                <TITLE RATING="atributo">Pasapalabra</TITLE>
                 <DESCRIPTION>Juego de agildiad mental sobre el diccionario español</DESCRIPTION>
+            </PROGRAMSLOT>
+        </DAY>
+    </CHANNEL>
+    <CHANNEL CHAN="Antena 3">
+        <BANNER>PELICULA DE TELECINCO</BANNER>
+        <DAY>
+            <DATE>"fecha"</DATE>
+            <HOLIDAY>yes</HOLIDAY>
+            <HOLIDAY>aa</HOLIDAY>
+            <HOLIDAY></HOLIDAY>
+            <PROGRAMSLOT>
+                <TIME>19:30</TIME>
+                <TITLE LANGUAGE="ESP">Detrás del último, no va nadie</TITLE>
+                <DESCRIPTION>Película de Humor Española</DESCRIPTION>
+            </PROGRAMSLOT>
+            <PROGRAMSLOT VTR="atributo">
+                <TIME>21:30</TIME>
+                <TITLE RATING="atributo">Titanic</TITLE>
+                <DESCRIPTION>Película de Drama </DESCRIPTION>
             </PROGRAMSLOT>
         </DAY>
     </CHANNEL>
