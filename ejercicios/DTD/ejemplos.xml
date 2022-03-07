@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TVSCHEDULE SYSTEM "ejemplos.dtd">
+<TVSCHEDULE NAME="Programación">
+    <CHANNEL CHAN="Telecinco">
+        <BANNER>PELICULA DE TELECINCO</BANNER>
+        <DAY>
+            <DATE>"fecha"</DATE>
+            <HOLIDAY>yes</HOLIDAY>
+            <HOLIDAY>aa</HOLIDAY>
+            <HOLIDAY></HOLIDAY>
+            <PROGRAMSLOT>
+                <TIME>14:00</TIME>
+                <TITLE>El precio justo</TITLE>
+                <DESCRIPTION>Programa de adivinar el precio de diferentes productos</DESCRIPTION>
+            </PROGRAMSLOT>
+            <PROGRAMSLOT>
+                <TIME>20:00</TIME>
+                <TITLE>Pasapalabra</TITLE>
+                <DESCRIPTION>Juego de agildiad mental sobre el diccionario español</DESCRIPTION>
+            </PROGRAMSLOT>
+        </DAY>
+    </CHANNEL>
+</TVSCHEDULE>

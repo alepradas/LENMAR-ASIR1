@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE futbol SYSTEM "futbol.dtd">
 <futbol>
+<vacio/> <!-- Elemento vacío-->
+<novacio>novacio</novacio>  <!-- Elemento no vacío-->
     <equipos>
         <equipo>
             <nombre>Betis</nombre>

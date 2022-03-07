@@ -1,4 +1,6 @@
-<!ELEMENT futbol (equipos)>
+<!ELEMENT futbol (vacio,novacio,equipos)>
+    <!ELEMENT vacio EMPTY>
+    <!ELEMENT novacio (#PCDATA)>
     <!ELEMENT equipos (equipo)>
        <!ELEMENT equipo (nombre,copas,jugadores,equipacion,partidos,estadio)>
             <!ELEMENT nombre (#PCDATA)>
