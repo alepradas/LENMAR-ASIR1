@@ -1,16 +1,25 @@
 <!ELEMENT NEWSPAPER (ARTICLE+)>
-<!ELEMENT ARTICLE (HEADLINE,BYLINE,LEAD,BODY,NOTES)>
+<!-- El símbolo + indica que el elemento puede aparecer 1 o más veces)-->
+<!-- El símbolo * indica que el elemento puede aparecer 0 o más veces)-->
+
+<!ELEMENT ARTICLE (HEADLINE,(BYLINE)*,LEAD,BODY,NOTES)>
+<!--EL asterisco indica que el elemento BYLINE, puede o no aparecer-->
 <!ELEMENT HEADLINE (#PCDATA)>
 <!ELEMENT BYLINE (#PCDATA)>
 <!ELEMENT LEAD (#PCDATA)>
 <!ELEMENT BODY (#PCDATA)>
 <!ELEMENT NOTES (#PCDATA)>
 
+
 <!ATTLIST ARTICLE AUTHOR CDATA #REQUIRED>
 <!ATTLIST ARTICLE EDITOR CDATA #IMPLIED>
 <!ATTLIST ARTICLE DATE CDATA #IMPLIED>
 <!ATTLIST ARTICLE EDITION CDATA #IMPLIED>
+<!ATTLIST HEADLINE NAME CDATA #IMPLIED>
+
 
 <!ENTITY NEWSPAPER "Vervet Logic Times">
 <!ENTITY PUBLISHER "Vervet Logic Press">
 <!ENTITY COPYRIGHT "Copyright 1998 Vervet Logic Press">
+
+]>
