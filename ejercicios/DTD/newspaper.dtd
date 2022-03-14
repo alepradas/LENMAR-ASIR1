@@ -1,3 +1,4 @@
+
 <!ELEMENT NEWSPAPER (ARTICLE+)>
 <!-- El símbolo + indica que el elemento puede aparecer 1 o más veces)-->
 <!-- El símbolo * indica que el elemento puede aparecer 0 o más veces)-->
