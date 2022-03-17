@@ -7,6 +7,22 @@
             <comercial></comercial>
         </nombre>
         <administración tipo="Intramuscular"></administración>
-        <dosis>xxx mg</dosis>
+        <dosis>20 mg</dosis>
+    </medicamento>
+    <medicamento>
+        <nombre id="2">
+            <genérico></genérico>
+            <comercial></comercial>
+        </nombre>
+        <administración tipo="Oral"></administración>
+        <dosis>10 mg</dosis>
+    </medicamento>
+    <medicamento>
+        <nombre id="3">
+            <genérico></genérico>
+            <comercial></comercial>
+        </nombre>
+        <administración tipo="Oral"></administración>
+        <dosis>5 mg</dosis>
     </medicamento>
 </medicamentos>
