@@ -1,6 +1,6 @@
 <!ELEMENT medicamentos (medicamento+)>
 <!ELEMENT medicamento (nombre,administración,dosis)>
-<!ELEMENT nombre (genérico,comercial)>
+<!ELEMENT nombre (genérico,comercial+)>
 <!ELEMENT genérico (#PCDATA)>
 <!ELEMENT comercial (#PCDATA)>
 <!ELEMENT administración (#PCDATA)>
