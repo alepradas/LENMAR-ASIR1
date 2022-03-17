@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE medicamentos SYSTEM "medicamentos.dtd">
+<medicamentos>
+    <medicamento>
+        <nombre id="1">
+            <genérico></genérico>
+            <comercial></comercial>
+        </nombre>
+        <administración tipo="Intramuscular|Oral"></administración>
+        <dosis>xxx mg</dosis>
+    </medicamento>
+</medicamentos>
