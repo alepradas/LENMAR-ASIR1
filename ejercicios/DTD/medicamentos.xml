@@ -6,7 +6,7 @@
             <genérico></genérico>
             <comercial></comercial>
         </nombre>
-        <administración tipo="Intramuscular|Oral"></administración>
+        <administración tipo="Intramuscular"></administración>
         <dosis>xxx mg</dosis>
     </medicamento>
 </medicamentos>

@@ -8,4 +8,4 @@
 
 <!-- Atributos -->
 <!ATTLIST nombre id CDATA #REQUIRED>
-<!ATTLIST administración tipo CDATA #REQUIRED>
+<!ATTLIST administración tipo (Intramuscular|Oral) #REQUIRED>
